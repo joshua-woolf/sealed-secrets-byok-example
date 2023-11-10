@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sealed-secrets-controller
+  namespace: kube-system
+spec:
+  template:
+    spec:
+      containers:
+      - name: sealed-secrets-controller
+        env:
+        - name: SEALED_SECRETS_PRIVATE_KEY_FILE
+          value: key.pem
+      volumes:
+      - name: custom-key
+        secret:
+          secretName: my-sealed-secrets-key
