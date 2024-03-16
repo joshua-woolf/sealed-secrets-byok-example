@@ -1,11 +1,3 @@
-# sealed-secrets-example
+# Sealed Secrets BYOK Example
 
-
-```bash
-kind create cluster --name secrets
-
-kubectl config set-context kind-secrets
-
-
-
-```
+This repository is an example of how to use sealed secrets with a self-managed key pair.
