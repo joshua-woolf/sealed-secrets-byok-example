@@ -1,6 +1,10 @@
 # Kubernetes
+brew "git"
 brew "helm"
-brew "jq"
-brew "kubectl"
-brew "kubeseal"
+brew "k9s"
 brew "kind"
+brew "jq"
+brew "kubeseal"
+brew "kubernetes-cli"
+
+cask "docker"

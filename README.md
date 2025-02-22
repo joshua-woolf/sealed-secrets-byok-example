@@ -1,28 +1,26 @@
 # Sealed Secrets BYOK Example
 
-This repository is an example of how to use sealed secrets with a self-managed key pair.
+This repository contains an example of how to use sealed secrets with a self-managed key pair.
 
-## Getting Started
+## Prerequisites
 
-**Prerequisites**
+You can install [Homebrew](https://brew.sh) and the dependencies with the following commands:
 
-This script can be run on WSL.
-
-Run [Docker Desktop](https://www.docker.com/products/docker-desktop) on your Windows host.
-
-Install [Homebrew](https://brew.sh):
-
-```shell
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
 
-Install the dependencies:
-
-```shell
 brew bundle
 ```
 
-Run the example:
+You may need to allow execution of the script by running the following command:
+
+```bash
+chmod +x ./example-secret.sh
+```
+
+## Getting Started
+
+To run the example, you can run the following command:
 
 ```shell
 ./example-secret.sh
