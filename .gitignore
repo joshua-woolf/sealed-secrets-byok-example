@@ -1,1 +1,5 @@
 Brewfile.lock.json
+
+example-secret.yaml
+sealed-secrets-key-*.crt
+sealed-secrets-key-*.key
